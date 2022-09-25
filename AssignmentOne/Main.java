@@ -44,9 +44,9 @@ public class Main
         */
         System.out.println("\n Initial value of a " + a);
         System.out.println("\n Initial value of b " + b);
-        int temp = a;
-        a = b;
-        b = temp;
+        a = a ^ b;
+        b = a ^ b;
+	a = a ^ b;
         System.out.println("\n Final value of a " + a);
         System.out.println("\n Final value of b " + b);
         
